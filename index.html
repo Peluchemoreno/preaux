@@ -77,7 +77,7 @@
                 <option value="drop">Drop to lower</option>
                 <option value="valley-shield">Valley Shield</option>
                 <option value="free-text">Elbow Seq/Piece Length</option>
-                <option value="eraser">Eraser</option>
+                <!-- <option value="eraser">Eraser</option> -->
                 <!-- <option value="flashing">Flashing</option>
               <option value="fascia-repair">Fascia Repair/Replace</option> -->
               </select>
@@ -87,8 +87,10 @@
                 max="50"
                 id="grid-size"
                 value="14"
+                class="toolbar__number-input"
               />
               <!-- <button id="color">Color</button> -->
+              <button type="button" class="undo-button">Set Grid</button>
               <select id="color">
                 <option
                   value="black"
@@ -127,9 +129,9 @@
                   Yellow
                 </option>
               </select>
-              <button type="button" class="undo-button">Undo</button>
+
+              <button class="eraser-btn" type="button">Eraser</button>
               <button type="button" id="clear-button">Clear</button>
-              <!-- <button type="button" id="show-legend" onclick="showLegend()">LGND</button> -->
               <button type="button" id="finish-button" onclick="finish()">
                 Done
               </button>
